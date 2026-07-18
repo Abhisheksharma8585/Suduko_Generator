@@ -35,7 +35,6 @@ This project demonstrates recursion, backtracking, randomization, and object-ori
 Sudoku_Generator/
 │
 ├── README.md
-├── LICENSE
 ├── .gitignore
 │
 └── Sudoku Game/
