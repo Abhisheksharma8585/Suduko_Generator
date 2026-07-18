@@ -2,21 +2,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SudokuGenerator {
-    private int size = 9;
-    private int[][] board = new int[size][size];
-
-    public static void main(String[] args) {
-        SudokuGenerator generate = new SudokuGenerator();
-        generate.generate_Suduko_Board();
-        
-    }
+    private static int size = 9;
+    private static int[][] board = new int[size][size];
     
-    private void generate_Suduko_Board() {
+    protected static  void generate_Suduko_Board() {
         fillBoard(0, 0);
         printBoard();
     }
 
-    private boolean fillBoard(int row, int col) {
+    private static boolean fillBoard(int row, int col) {
         if(row == size) return true;
 
         int nextRow = (col == size - 1) ? row + 1 : row;
@@ -38,7 +32,7 @@ public class SudokuGenerator {
         return false;
     }
 
-    private boolean isSafe(int num, int row, int col) {
+    private static boolean isSafe(int num, int row, int col) {
 
         for(int i = 0; i < 9; i++) {
             if(board[row][i] == num) return false;
@@ -56,7 +50,7 @@ public class SudokuGenerator {
         return true;
     }
 
-    private void printBoard() {
+    private static  void printBoard() {
         String line = "-------------------------------------";
        
         for (int i = 0; i < 9; i++) {
@@ -66,6 +60,7 @@ public class SudokuGenerator {
             } 
             System.out.println("|");
         }
-        System.out.println(line);
+        System.out.println(line + "\n");
+
     }
 }
