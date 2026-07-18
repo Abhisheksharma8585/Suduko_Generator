@@ -36,7 +36,6 @@ Sudoku_Generator/
 │
 ├── README.md
 ├── .gitignore
-│
 └── Sudoku Game/
     │
     ├── src/
