@@ -39,7 +39,8 @@ Sudoku_Generator/
 └── Sudoku Game/
     │
     ├── src/
-        └── SudokuGenerator.java
+        ├── SudokuGenerator.java
+        └── main.java
 
 ```
 
